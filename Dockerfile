@@ -13,9 +13,9 @@ RUN apt-get update && apt-get install -y \
   unzip
 
 # App
-RUN curl -L -o elastalert.zip https://github.com/Yelp/elastalert/archive/v0.0.81.zip && \
+RUN curl -L -o elastalert.zip https://github.com/Yelp/elastalert/archive/v0.0.82.zip && \
   unzip elastalert.zip && \
-  mv elastalert-0.0.81 ${ELASTALERT_DIR} && \
+  mv elastalert-0.0.82 ${ELASTALERT_DIR} && \
   rm elastalert.zip
 
 WORKDIR ${ELASTALERT_DIR}
