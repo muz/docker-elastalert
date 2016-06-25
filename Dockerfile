@@ -4,7 +4,7 @@ MAINTAINER Muz Ali "docker-elastalert@mustaqila.li"
 
 WORKDIR /opt/elastalert
 
-RUN wget -O- https://github.com/Yelp/elastalert/archive/v0.0.83.tar.gz \
+RUN wget -O- https://github.com/Yelp/elastalert/archive/v0.0.89.tar.gz \
   | tar -xz --strip-components=1
 
 RUN pip install -r requirements.txt \
